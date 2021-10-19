@@ -1,0 +1,11 @@
+<div class="episode" *ngFor="let b of spongebobepisodes">
+  <div class="episodeContainer">
+    <div class="playButton">
+      <img src="../../assets/icons/play.png" alt="play" />
+    </div>
+    <div class="previewImage">
+      <img src="{{ b.image }}" alt="lastepisode" />
+    </div>
+  </div>
+  <h1>{{ b.name }}</h1>
+</div>

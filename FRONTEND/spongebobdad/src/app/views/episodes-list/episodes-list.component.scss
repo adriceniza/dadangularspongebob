@@ -1,0 +1,34 @@
+.episodes-container > #title {
+  font-size: 32px;
+  color: gray;
+  text-align: center;
+}
+app-episode-thumbnail {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 950px) {
+  app-episode-thumbnail {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .episodes-container {
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  app-episode-thumbnail {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+  .episodes-container {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  app-episode-thumbnail {
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+  .episodes-container {
+    height: 100%;
+  }
+}

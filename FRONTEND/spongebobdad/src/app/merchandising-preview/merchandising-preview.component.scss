@@ -1,0 +1,124 @@
+.merchandising-container > ul {
+  list-style: none;
+  width: 100vw;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  justify-content: center;
+}
+.merchandising-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.merchandising-container > ul > li {
+  width: 100%;
+  transform: scale(0.8);
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(240, 240, 240, 0.616);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.274);
+  cursor: pointer;
+  color: rgb(82, 141, 196);
+}
+.merchandising-container > ul > li > img {
+  width: 80%;
+  height: 80%;
+}
+#itemModel {
+  font-weight: 800;
+}
+
+.item {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  transition: 0.3s all;
+  transform: translateX(-3000px);
+}
+.item > h1,
+p {
+  color: rgb(0, 119, 255);
+  font-size: 150%;
+}
+.item > img {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 400px;
+}
+.item > .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.item > .buttons > * {
+  margin-inline: 20px;
+  border: 1px solid rgba(0, 119, 255, 0.486);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.493);
+  transition: 0.2s all;
+  flex: 1;
+}
+.item > .buttons > *:hover {
+  border: 1px solid rgb(0, 119, 255);
+}
+
+@media only screen and (max-width: 950px) {
+  .item > .buttons {
+    width: 100%;
+  }
+  .merchandising-container > ul {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .item > .buttons {
+    width: 65%;
+  }
+  .merchandising-container > ul {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .item > .buttons {
+    width: 50%;
+  }
+  .merchandising-container > ul {
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+}
+
+#closeButton {
+  margin-top: 20px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(211, 226, 76, 0.582);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.411);
+  transition: all 0.3s;
+}
+#closeButton:hover {
+  border: 1px solid rgb(211, 226, 76);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.603);
+}

@@ -1,0 +1,35 @@
+.episodeContainer {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  cursor: pointer;
+}
+.playButton {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  filter: invert(1);
+}
+.previewImage > img {
+  position: relative;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.432);
+}
+.previewImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.episode > h1 {
+  color: rgb(82, 141, 196);
+}
+.episode {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+}

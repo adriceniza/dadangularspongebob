@@ -1,0 +1,11 @@
+<div class="container-navbar">
+  <div class="logo">
+    <img src="../../assets/images/SpongeBob_SquarePants_logo.svg" alt="" />
+  </div>
+  <ul class="buttons">
+    <app-navbar-button
+      *ngFor="let button of buttons"
+      [item]="button"
+    ></app-navbar-button>
+  </ul>
+</div>

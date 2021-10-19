@@ -1,0 +1,30 @@
+<div class="login-container">
+  <app-mobile-menu></app-mobile-menu>
+  <app-mobile-menu-open-button></app-mobile-menu-open-button>
+  <div class="logo">
+    <img src="../../../assets/images/spongebob-logo.png" alt="logo" />
+  </div>
+  <h1 class="title">LOGIN</h1>
+  <div class="loginForm">
+    <form action="login">
+      <label for="user">Username</label>
+      <input type="text" name="user" id="loginUser" [(ngModel)]="loginUser" />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="loginPassword"
+        [(ngModel)]="loginPassword"
+      />
+      <h2 id="messagesend"></h2>
+      <button
+        class="submit"
+        type="button"
+        (click)="loginSubmit(loginUser, loginPassword)"
+      >
+        SUBMIT
+      </button>
+    </form>
+  </div>
+  <app-footer></app-footer>
+</div>

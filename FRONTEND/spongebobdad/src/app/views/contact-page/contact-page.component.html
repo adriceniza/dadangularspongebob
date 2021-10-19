@@ -1,0 +1,50 @@
+<app-mobile-menu></app-mobile-menu>
+<div class="contact-container">
+  <app-mobile-menu-open-button></app-mobile-menu-open-button>
+  <div class="logo">
+    <img src="../../../assets/images/spongebob-logo.png" alt="logo" />
+  </div>
+  <h1 class="title">CONTACT US</h1>
+  <div class="contact-form">
+    <form>
+      <label for="name">Name</label>
+      <input
+        [(ngModel)]="contactName"
+        type="text"
+        pattern="[A-Za-z]{4,}"
+        name="contactName"
+        contactName
+        required
+        id="contactName"
+      />
+      <label for="email">Email</label>
+      <input
+        name="contactEmail"
+        [(ngModel)]="contactEmail"
+        type="email"
+        id="contactEmail"
+        required
+      />
+      <label for="message">Message</label>
+      <textarea
+        pattern="/^.{12,}$/"
+        name="message"
+        [(ngModel)]="contactMessage"
+        cols="20"
+        rows="5"
+        required
+        id="contactMessage"
+      ></textarea>
+      <h2 id="messagesend"></h2>
+      <button
+        class="submit"
+        type="button"
+        (click)="submitAnimation(contactName, contactEmail, contactMessage)"
+      >
+        SUBMIT
+      </button>
+    </form>
+  </div>
+
+  <app-footer></app-footer>
+</div>

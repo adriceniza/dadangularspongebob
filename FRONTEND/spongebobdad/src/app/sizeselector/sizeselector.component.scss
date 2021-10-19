@@ -1,0 +1,40 @@
+.sizeselector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sizeselector ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 4px;
+  padding-inline-start: 0;
+  box-shadow: 0 1px 4px rgb(119, 119, 119);
+  border-radius: 10px;
+  height: 30px;
+}
+
+.sizeselector ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 221, 221, 0.151);
+  cursor: pointer;
+  font-size: 90%;
+}
+.sizeselector ul > li:hover {
+  background-color: rgba(255, 245, 104, 0.637);
+}
+.sizeselector ul > li:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.sizeselector ul > li:last-child {
+  border-radius: 0 10px 10px 0;
+}
