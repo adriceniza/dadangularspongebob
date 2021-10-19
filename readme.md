@@ -44,7 +44,9 @@
 <br/>
 ### Prerequisites
 
-Open your IDE for Spring and run spring boot app.
+Open workbench and import the database saved on backend/spongebobClothes/database/spongebobdatabase.sql
+
+Open your IDE for Spring ,change the application.properties and put your mysql credentials then run spring boot app.
 
 To start the frontend , open the terminal when you are on the frontend/spongebobdad folder and write ng serve -o.
 
